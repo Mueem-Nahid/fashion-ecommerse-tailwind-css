@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fashion E-commerse</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-yellow-100">
+
+        <!-- Navbar goes here -->
+		<nav class="">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2">
+                                <img class="w-72 h-auto" src="icons/Group 33072.png" alt="">
+							</a>
+						</div>
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3 ">
+						<a href="" class="py-4 px-2 text-gray-700 font-medium hover:text-gray-900">Home</a>
+						<a href="" class="py-4 px-2 text-gray-700 font-medium hover:text-gray-900 transition duration-300">Product</a>
+						<a href="" class="py-4 px-2 text-gray-700 font-medium hover:text-gray-900 transition duration-300">About Us</a>
+						<a href="" class="py-4 px-2 text-gray-700 font-medium hover:text-gray-900 transition duration-300">Contact Us</a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-700 hover:text-gray-900 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class=""><a href="index.html" class="block text-sm px-2 py-4 text-gray-700 hover:bg-gray-700 hover:text-white font-semibold">Home</a></li>
+					<li><a href="#services" class="block text-gray-700 text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Services</a></li>
+					<li><a href="#about" class="block text-gray-700 text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">About</a></li>
+					<li><a href="#contact" class="block text-gray-700 text-sm px-2 py-4 hover:bg-gray-700 hover:text-white transition duration-300">Contact Us</a></li>
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+
+        <!-- winter section -->
+        <section class="max-w-6xl mx-auto p-4 md:flex items-center">
+            <div class="space-y-3.5">
+                <h1 class="text-7xl font-bold text-gray-700"> <span class="text-yellow-400">BE THE PENGUINS</span><br>OF WINTER</h1>
+                <p class="text-gray-700 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam asperiores eligendi sunt alias.</p>
+                <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+            </div>
+            <div class="">
+                <img src="images/model.png" alt="">
+            </div>
+        </section> 
+    </header>
+
+    <main>
+        <!-- jacket section -->
+        <section class="container max-w-6xl mx-auto p-4">
+            <!-- woman jacket container -->
+            <h2 class="text-3xl uppercase text-gray-700 font-bold p-8">Women's Jacket</h2> 
+            <div class="grid md:grid-flow-col md:grid-cols-3 gap-8">
+                <div class="shadow-lg rounded-3xl p-5 space-y-4">
+                    <div class="bg-gray-100 rounded-md">
+                        <img class="w-80 h-80" src="images/jacket-1.png" alt="">
+                    </div>
+                    <h4 class="text-2xl text-gray-700 font-bold">Yellow Coat Jacket</h4>
+                    <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque.</p>
+                    <div class="flex justify-between items-center">
+                        <div><h5 class="text-4xl text-yellow-400 font-black">$100</h5></div>
+                        <div>
+                            <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-5 space-y-4">
+                    <div class="bg-gray-100 rounded-md">
+                        <img class="w-80 h-80" src="images/jacket-2.png" alt="">
+                    </div>
+                    <h4 class="text-2xl text-gray-700 font-bold">Ladies Jacket</h4>
+                    <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque.</p>
+                    <div class="flex justify-between items-center">
+                        <div><h5 class="text-4xl text-yellow-400 font-black">$200</h5></div>
+                        <div>
+                            <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-5 space-y-4">
+                    <div class="bg-gray-100 rounded-md">
+                        <img class="w-80 h-80" src="images/jacket-3.png" alt="">
+                    </div>
+                    <h4 class="text-2xl text-gray-700 font-bold">Woman Leather Jacket</h4>
+                    <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque.</p>
+                    <div class="flex justify-between items-center">
+                        <div><h5 class="text-4xl text-yellow-400 font-black">$130</h5></div>
+                        <div>
+                            <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- man jacket container -->
+            <h2 class="text-3xl uppercase text-gray-700 font-bold p-8 pt-16">Men's Jacket</h2> 
+            <div class="grid md:grid-flow-col md:grid-cols-3 gap-8">
+                <div class="shadow-lg rounded-3xl p-5 space-y-4">
+                    <div class="bg-gray-100 rounded-md">
+                        <img class="w-80 h-80" src="images/jacket-4.png" alt="">
+                    </div>
+                    <h4 class="text-2xl text-gray-700 font-bold">Snowboard Jacket Mens</h4>
+                    <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque.</p>
+                    <div class="flex justify-between items-center">
+                        <div><h5 class="text-4xl text-yellow-400 font-black">$100</h5></div>
+                        <div>
+                            <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-5 space-y-4">
+                    <div class="bg-gray-100 rounded-md">
+                        <img class="w-80 h-80" src="images/jacket-5.png" alt="">
+                    </div>
+                    <h4 class="text-2xl text-gray-700 font-bold">Man Leather Jacket</h4>
+                    <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque.</p>
+                    <div class="flex justify-between items-center">
+                        <div><h5 class="text-4xl text-yellow-400 font-black">$200</h5></div>
+                        <div>
+                            <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-5 space-y-4">
+                    <div class="bg-gray-100 rounded-md">
+                        <img class="w-80 h-80" src="images/jacket-6.png" alt="">
+                    </div>
+                    <h4 class="text-2xl text-gray-700 font-bold">Man Casual Jackets</h4>
+                    <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque.</p>
+                    <div class="flex justify-between items-center">
+                        <div><h5 class="text-4xl text-yellow-400 font-black">$130</h5></div>
+                        <div>
+                            <button class="btn1"> <i class="fas fa-shopping-cart"></i> buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features section -->
+        <section class="container max-w-6xl mx-auto p-4 pt-28 pb-28 grid md:grid-cols-2 gap-5">
+            <div class="row-span-3 md:order-2">
+                <img src="images/shopping.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            </div>
+
+            <div class="grid justify-items-center text-center md:flex items-center md:text-left shadow-lg rounded-md md:order-1">
+                <div class="">
+                    <img class="w-16 h-16" src="icons/image 12.png" alt="">
+                </div>
+                <div class="px-2">
+                    <h5 class="text-2xl text-gray-700 font-bold">Find the Perfect Fit</h5>
+                    <p class="text-gray-700">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+            </div>
+            
+            <div class="grid justify-items-center text-center md:flex items-center md:text-left shadow-lg rounded-md md:order-3">
+                <div class="">
+                    <img class="w-16 h-16" src="icons/image 13.png" alt="">
+                </div>
+                <div class="px-2">
+                    <h5 class="text-2xl text-gray-700 font-bold">Free Exchanges</h5>
+                    <p class="text-gray-700">One of the many reasons you can shop with peace of mind.</p>
+                </div>
+            </div>
+            <div class="grid justify-items-center text-center md:flex items-center md:text-left shadow-lg rounded-md md:order-4">
+                <div class="">
+                    <img class="w-16 h-16" src="icons/image 14.png" alt="">
+                </div>
+                <div class="px-2">
+                    <h5 class="text-2xl text-gray-700 font-bold">Contact Our Sellert</h5>
+                    <p class="text-gray-700">They are here to help you. That's quite literally what we pay them for.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-yellow-100 h-20 flex items-center justify-center">
+        <p class="text-gray-700 font-bold">mueem51@gmail.com</p>
+    </footer>
+</body>
+</html>
